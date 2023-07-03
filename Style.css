@@ -4,20 +4,25 @@ body {
 }
 
 header {
-    background: #ccc;
+    background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(0,160,255,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 header h1 {
     margin: 0 0 0 70px;
-    padding: 0;
+    padding: 0 0 0 0;
     letter-spacing: 9px;
     user-select: none;
     cursor: pointer;
+    width: 500px;
+    font-size: 23px;
+    color: #fff;
+    transition: color ease 0.3s;
 }
 
 header ul {
@@ -27,18 +32,32 @@ header ul {
 
 header a {
     text-decoration: none;
-    color: #000;
-    margin-right: 70px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-right: 120px;
+    transition: color ease 0.3s;
+}
+
+header a:hover {
+    color: #ffa500;
+}
+
+header h1:hover {
+    color: #ffa500;
 }
 
 #slideshow img {
     width: 100%;
-    aspect-ratio: 16/9;
     height: 770px;
+    aspect-ratio: 16/9;
     object-fit: fill;
 }
 
 #slideshow {
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
@@ -63,4 +82,8 @@ header a {
 #navbar li:hover {
     background-color: #ccc;
     scale: 1.1;
+}
+
+.project-img {
+    width: 10vw;
 }
