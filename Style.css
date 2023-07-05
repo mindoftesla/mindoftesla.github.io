@@ -55,41 +55,16 @@ header a {
     transition: color ease 0.3s;
 }
 
-#slideshow img {
-    width: 100%;
-    object-fit: cover;
-}
-
-#slideshow {
-    width: 100%;
+#front-image {
     height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    position: relative;
     margin-bottom: 13vh;
 }
 
-#navbar {
-    position: absolute;
-    display: flex;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#navbar li {
-    list-style-type: none;
-    background-color: #fff;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    margin-right: 20px;
-    transition: background-color ease 0.3s, scale ease 0.3s;
-}
-
-#navbar li:hover {
-    background-color: #ccc;
-    scale: 1.1;
+#front-image img {
+    width: 100vw;
 }
 
 .project {
