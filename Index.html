@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAA HOME IMPROVEMENT & REMODELING</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>AAA HOME IMPROVEMENT & REMODELING</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="slideshow">
+            <img id="slides" src="" alt="">
+            <ul id="navbar">
+                <li id="0"><a></a></li>
+                <li id="1" onclick="document.getElementById(i).style.scale = '1'; i = 1; slides.src = slide[i];"><a></a></li>
+                <li id="2" onclick="i = 2; slides.src = slide[i];"><a></a></li>
+                <li id="3" onclick="i = 3; slides.src = slide[i];"><a></a></li>
+            </ul>
+        </section>
+        <section id="projects-section">
+            <div class="project">
+                <img class="project-img" src="Construction/IMG_2403.JPG" alt="">
+            </div>
+        </section>
+    </main>
+    <script>
+        window.onload=changeImg;
+        var slides = document.getElementById("slides");
+        var slide = [];
+        var i = 0;
+        var time = 3000;
+        slide[0] = "Images/Another Upper Level Deck.PNG";
+        slide[1] = "Images/Floor With Tiles.PNG";
+        slide[2] = "Images/More Workshop.PNG";
+        slide[3] = "Images/Pillar-deck.PNG";
+        document.getElementById("1").style.scale = "1.2";
+        function changeImg() {
+            slides.src = slide[i];
+            if (i == 0) {
+                document.getElementById("0").style.scale = "1.15";
+            }
+            if (i != 0) {
+                document.getElementById("0").style.scale = "1";
+            }
+            if (i == 1) {
+                document.getElementById("1").style.scale = "1.15";
+            }
+            if (i != 1) {
+                document.getElementById("1").style.scale = "1";
+            }
+            if (i == 2) {
+                document.getElementById("2").style.scale = "1.15";
+            }
+            if (i != 2) {
+                document.getElementById("2").style.scale = "1";
+            }
+            if (i == 3) {
+                document.getElementById("3").style.scale = "1.15";
+            }
+            if (i != 3) {
+                document.getElementById("3").style.scale = "1";
+            }
+            if (i < slide.length - 1) {
+                i++
+            }
+            else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+    </script>
+</body>
+</html>
