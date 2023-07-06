@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>AAA HOME IMPROVEMENT & REMODELING</h1>
+        <h1 id="home-redirect">AAA HOME IMPROVEMENT & REMODELING</h1>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
@@ -129,5 +129,23 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p style="cursor: pointer; display: inline-block;"><a href="index.html" style="color: #000; text-decoration: none;">&copy AAA Home Improvement and Remodeling Est. 1999</a></p>
+        <div id="menu">
+            <p><a href="About.html"><strong>About</strong></a></p>
+            <p><a href="Contact.html"><strong>Contact</strong></a></p>
+        </div>
+        <button id="top-page" onclick="">Top of Page</button>
+    </footer>
+    <script>
+        document.getElementById('home-redirect')
+        .addEventListener('click', () => {
+            window.location.href = 'index.html';
+        })
+        document.getElementById('top-page')
+        .addEventListener('click', () => {
+            window.location.href = 'index.html';
+        })
+    </script>
 </body>
 </html>
