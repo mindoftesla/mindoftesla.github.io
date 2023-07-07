@@ -138,19 +138,32 @@ footer button:hover {
     border: 2px solid #de9000;
 }
 
-@media screen and (max-width = 1002px) {
+@media screen and (max-width: 1002px) {
     header h1 {
         width: 300px;
     }
 }
 
-@media screen and (max-width = 747px) {
+@media screen and (max-width: 747px) {
     header h1 {
         font-size: 19px;
     }
 }
 
-@media screen and (max-width = 390px) {
+@media screen and (max-width: 390px) {
+    header h1 {
+        font-size: 19px;
+    }
+
+    header {
+        justify-content: center;
+    }
+    header ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 683px) {
     header h1 {
         font-size: 19px;
     }
@@ -163,15 +176,7 @@ footer button:hover {
     }
 }
 
-@media screen and (max-width = 683px) {
-    header h1 {
-        font-size: 19px;
-    }
-
-    header {
-        justify-content: center;
-    }
-    header ul {
-        display: none;
-    }
-}
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
