@@ -138,19 +138,19 @@ footer button:hover {
     border: 2px solid #de9000;
 }
 
-@media only screen and (width <= 1002px) {
+@media screen and (width <= 1002px) {
     header h1 {
         width: 300px;
     }
 }
 
-@media only screen and (width <= 747px) {
+@media screen and (width <= 747px) {
     header h1 {
         font-size: 19px;
     }
 }
 
-@media only screen and (width <= 390px) {
+@media screen and (width <= 390px) {
     header h1 {
         font-size: 19px;
     }
@@ -163,7 +163,7 @@ footer button:hover {
     }
 }
 
-@media only screen and (width <= 683px) {
+@media screen and (width <= 683px) {
     header h1 {
         font-size: 19px;
     }
