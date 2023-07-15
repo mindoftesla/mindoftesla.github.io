@@ -99,7 +99,7 @@ footer {
     padding: 1vh 2vw;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     bottom: 0;
     width: 96%;
