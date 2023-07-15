@@ -94,48 +94,6 @@ section a:hover {
     color: #ffa500;
 }
 
-@media only screen and (max-width: 1196px) {
-    main p {
-        width: 100vw;
-    }
-}
-
-@media only screen and (max-width: 1002px) {
-    header h1 {
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 747px) {
-    header h1 {
-        font-size: 19px;
-    }
-
-    #email-address {
-        font-size: 4.5vw;
-    }
-}
-
-@media only screen and (max-width: 683px) {
-    header {
-        display: block;
-    }
-    header h1 {
-        margin: auto;
-        font-size: 4vw;
-        width: 100vw;
-    }
-
-    header ul {
-        justify-content: center;
-        padding-left: 7.5vw;
-    }
-
-    header li a {
-        font-size: 4vw;
-    }
-}
-
 footer {
     border-top: 1px solid #ccc;
     padding: 1vh 2vw;
@@ -185,6 +143,48 @@ footer #button {
 footer #button:hover {
     color: #de9000;
     border: 2px solid #de9000;
+}
+
+@media only screen and (max-width: 1196px) {
+    main p {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 1002px) {
+    header h1 {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 747px) {
+    header h1 {
+        font-size: 19px;
+    }
+
+    #email-address {
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    header {
+        display: block;
+    }
+    header h1 {
+        margin: auto;
+        font-size: 4vw;
+        width: 100vw;
+    }
+
+    header ul {
+        justify-content: center;
+        padding-left: 7.5vw;
+    }
+
+    header li a {
+        font-size: 4vw;
+    }
 }
 
 @media only screen and (max-width: 632px) {
