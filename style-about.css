@@ -1,7 +1,7 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    background-image: url(Images/Mountains-background.jpg);
+    background-image: url(Images/dino-reichmuth-zlV1Ksvifvs-unsplash.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: none;
@@ -71,6 +71,57 @@ section p {
     width: 25vw;
 }
 
+footer {
+    border-top: 1px solid #ccc;
+    padding: 1vh 2vw;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    padding-right: 2vw;
+}
+
+#footer-name:hover {
+    color: #ffa500;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #ffa500;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+
+footer #button {
+    color: #ffa500;
+    border: 2px solid #ffa500;
+    border-radius: 0.5vw;
+    margin-left: 6vw;
+    padding: 1vh 1.5vw;
+    cursor: pointer;
+    font-weight: 800;
+    transition: color ease 0.3s;
+    text-decoration: none;
+}
+
+footer #button:hover {
+    color: #de9000;
+    border: 2px solid #de9000;
+}
+
 @media only screen and (width <= 996px) {
     section p {
         background-color: white;
@@ -80,14 +131,52 @@ section p {
     }
 }
 
-@media only screen and (width <= 1002px) {
+@media only screen and (max-width: 1002px) {
     header h1 {
         width: 300px;
     }
 }
 
-@media only screen and (width <= 747px) {
+@media only screen and (max-width: 480px) {
+    section p {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 747px) {
     header h1 {
         font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    header {
+        display: block;
+    }
+    header h1 {
+        margin: auto;
+        font-size: 4vw;
+        width: 100vw;
+    }
+
+    header ul {
+        justify-content: center;
+        padding-left: 7.5vw;
+    }
+
+    header li a {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 632px) {
+    footer {
+        display: block;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+
+    #links {
+        position: relative;
     }
 }
