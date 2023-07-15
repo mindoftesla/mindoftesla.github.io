@@ -76,8 +76,12 @@ section p {
     text-decoration: none;
     color: #fff;
     font-weight: 800;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
     font-size: 34px;
     text-align: center;
 }
@@ -85,9 +89,13 @@ section p {
 section a{
     text-decoration: none;
     color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     transition: color ease 0.3s;
+    text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
 
 section a:hover {
