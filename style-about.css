@@ -76,7 +76,7 @@ footer {
     padding: 1vh 2vw;
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     bottom: 0;
     width: 96%;
@@ -139,7 +139,6 @@ footer #button:hover {
 
     body {
         aspect-ratio: 9 / 16;
-        overflow-y: hidden;
     }
 }
 
