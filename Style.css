@@ -121,17 +121,18 @@ footer {
 #menu a {
     text-decoration: none;
     color: #ffa500;
-    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-right: 6px;
     margin: 0;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 footer #button {
     color: #ffa500;
     border: 2px solid #ffa500;
     border-radius: 0.5vw;
-    margin-left: 6vw;
+    margin-left: 3vw;
     padding: 1vh 1.5vw;
     cursor: pointer;
     font-weight: 800;
