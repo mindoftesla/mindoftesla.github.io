@@ -83,7 +83,7 @@ header a {
 .project {
     display: flex;
     align-items: center;
-    margin-bottom: 13vh;
+    margin-bottom: 7vw;
     padding-left: 7vw;
 }
 
@@ -157,7 +157,12 @@ footer #button:hover {
 
     .project {
         display: block;
-        margin-bottom: 3.5vh;
+        margin-bottom: 4vw;
+    }
+
+    .project h1 {
+        width: 86vw;
+        margin-left: 0 !important;
     }
 
     .project-img {
