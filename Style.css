@@ -73,7 +73,7 @@ header a {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    margin-bottom: 13vh;
+    margin-bottom: 7vw;
 }
 
 .projects-section {
@@ -153,6 +153,15 @@ footer #button:hover {
 @media only screen and (max-width: 747px) {
     header h1 {
         font-size: 19px;
+    }
+
+    .project {
+        display: block;
+        margin-bottom: 3.5vh;
+    }
+
+    .project-img {
+        width: 86vw;
     }
 }
 
